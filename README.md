@@ -1,6 +1,6 @@
 # **WebSocket Testing System**
 
-This project provides a **WebSocket testing system** that simulates multiple client-server interactions for testing purposes. The system includes a mock WebSocket server that echoes back received messages and a client simulation script that creates multiple WebSocket connections, sends messages, and logs all activity.
+This project provides a **WebSocket testing system** that simulates multiple client-server interactions for testing purposes. The system includes a mock WebSocket server that echoes client messages and a client simulation script that creates multiple WebSocket connections, sends messages, and logs all activity.
 
 ---
 
@@ -8,8 +8,7 @@ This project provides a **WebSocket testing system** that simulates multiple cli
 1. `mock_websocket_server.py`  
    - A mock WebSocket server that listens on `ws://127.0.0.1:9001`.
    - Echoes back any messages received from clients.
-   - Logs client connections, disconnections, and messages in real-time.
-
+     
 2. `simulate_websockets.py`  
    - Simulates multiple WebSocket connections to the server.
    - Sends text-based messages with timestamps to the server.
@@ -21,7 +20,8 @@ This project provides a **WebSocket testing system** that simulates multiple cli
 - **Python** 3.7 or later.
 - Install the required libraries:
   ```bash
-  pip install websocket-server websockets
+  pip install websocket
+  pip install websocket-server
   ```
 
 ## **Usage**
